@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Official Mikejin website - Beats, Music, Drumkits, Shows, ...">
+    <meta name="keywords" content="mikejin, beats, trap, rage trap, music, type beat">
+    <title>Mikejin | Official Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+</head>
+
+<body>
+    <!-- Intro Overlay -->
+    <div id="intro-overlay"></div>
+
+    <!-- Language Selector (Desktop) -->
+    <div class="lang-selector desktop-lang">
+        <button class="lang-btn" onclick="changeLanguage('en')" title="English">
+            <img src="assets/flag-for-flag-us-outlying-islands-svgrepo-com.svg" alt="US Flag">
+        </button>
+        <button class="lang-btn" onclick="changeLanguage('pt')" title="Português">
+            <img src="assets/flag-pt-svgrepo-com.svg" alt="PT Flag">
+        </button>
+    </div>
+
+    <button class="get-started-btn">
+        <div class="bat-symbol">🦇</div>
+        <span data-i18n="started">GET STARTED</span>
+    </button>
+
+    <!-- Background Image -->
+    <img src="assets/88dd1414cb2944cfdd117a250a03e0b3_1.gif" alt="" class="site-bg">
+
+    <div class="scan-lines"></div>
+
+
+
+    <!-- Fixed Sidebar Navigation -->
+    <nav class="sidebar">
+        <!-- Logo for Mobile Header -->
+        <img src="assets/png mikejin letter.png" alt="logo" class="sidebar-logo">
+
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <div class="nav-links">
+            <ul>
+                <li><a href="#beats" data-i18n="nav-beats">BEATS</a></li>
+                <li><a href="#gallery" data-i18n="nav-gallery">GALLERY</a></li>
+                <li><a href="#store" data-i18n="nav-store">STORE</a></li>
+                <li><a href="#shows" data-i18n="nav-shows">SHOWS</a></li>
+                <li><a href="#signup" class="signup-trigger" data-i18n="nav-signup">SIGN UP</a></li>
+            </ul>
+
+            <!-- Language Selector (Mobile/Tablet Menu) -->
+            <div class="lang-selector-nav">
+                <button class="lang-btn" onclick="changeLanguage('en')" title="English">
+                    <img src="assets/flag-for-flag-us-outlying-islands-svgrepo-com.svg" alt="US Flag">
+                </button>
+                <button class="lang-btn" onclick="changeLanguage('pt')" title="Português">
+                    <img src="assets/flag-pt-svgrepo-com.svg" alt="PT Flag">
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Landing Section -->
+        <section id="landing" class="section landing-section">
+            <div class="mobile-intro-text">
+                this ain't for the radio... this a sonic weapon built to start riots and anarchy!! if you ain't ready to
+                turn your brain into a war zone, turn back now and stay safe...
+            </div>
+            <img src="assets/sooooon.png" alt="" class="handwritten-logo-bg">
+            <div class="landing-content">
+                <!-- Button moved to body for overlay context -->
+            </div>
+            <div class="scroll-indicator">
+                <span data-i18n="scroll">SCROLL</span>
+                <div class="chevron-down">∨</div>
+            </div>
+            <img src="assets/png mikejin letter.png" alt="" class="logo-watermark">
+        </section>
+
+        <!-- Beats Section -->
+        <section id="beats" class="section beats-section">
+            <h2 class="section-title" data-i18n="nav-beats">BEATS</h2>
+            <div class="beats-container">
+                <!-- YouTube Column -->
+                <a href="https://www.youtube.com/@mikejinbeats" target="_blank" class="beat-column youtube-column">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg"
+                        alt="YouTube Logo" class="beat-logo">
+                    <span class="beat-label" data-i18n="listen-yt">LISTEN ON<br>YOUTUBE</span>
+                </a>
+
+                <!-- BeatStars Column -->
+                <a href="https://www.beatstars.com/mikejin" target="_blank" class="beat-column beatstars-column">
+                    <img src="assets/beattt.png" alt="BeatStars Logo" class="beat-logo">
+                    <span class="beat-label" data-i18n="listen-bs">LISTEN ON<br>BEATSTARS</span>
+                </a>
+            </div>
+
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="section videos-section">
+            <h2 class="section-title" data-i18n="nav-gallery">GALLERY</h2>
+            <div class="videos-grid">
+                <div class="video-card">
+                    <h3 class="video-title">frame1**</h3>
+                    <div class="video-wrapper">
+                        <img src="assets/thumbbbb.png" alt="frame1"
+                            style="position: absolute; top:0; left:0; width:100%; height:100%; object-fit: cover;">
+                        <div class="video-overlay" data-i18n="view">view</div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <h3 class="video-title">frame2**</h3>
+                    <div class="video-wrapper">
+                        <img src="assets/thumbbbssab.png" alt="frame2"
+                            style="position: absolute; top:0; left:0; width:100%; height:100%; object-fit: cover;">
+                        <div class="video-overlay" data-i18n="view">view</div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <h3 class="video-title">frame3**</h3>
+                    <div class="video-wrapper">
+                        <img src="assets/dsascxc.png" alt="frame3"
+                            style="position: absolute; top:0; left:0; width:100%; height:100%; object-fit: cover;">
+                        <div class="video-overlay" data-i18n="view">view</div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <h3 class="video-title">frame4**</h3>
+                    <div class="video-wrapper">
+                        <img src="assets/ddscv.png" alt="frame4"
+                            style="position: absolute; top:0; left:0; width:100%; height:100%; object-fit: cover;">
+                        <div class="video-overlay" data-i18n="view">view</div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <h3 class="video-title">frame5**</h3>
+                    <div class="video-wrapper">
+                        <img src="assets/thumb.jpg" alt="frame5"
+                            style="position: absolute; top:0; left:0; width:100%; height:100%; object-fit: cover;">
+                        <div class="video-overlay" data-i18n="view">view</div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <h3 class="video-title">lost-stream1**</h3>
+                    <div class="video-wrapper">
+                        <video loop muted playsinline onmouseover="this.play()" onmouseout="this.pause()"
+                            style="position: absolute; top:0; left:0; width:100%; height:100%; object-fit: cover;">
+                            <source src="assets/dfdsvdvdvsdvdvxcvxv.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-overlay" data-i18n="view">view</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Store Section -->
+        <section id="store" class="section store-section">
+            <h2 class="section-title" data-i18n="nav-store">STORE</h2>
+            <div class="store-carousel">
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <!-- Product 1 -->
+                        <div class="product-card">
+                            <div class="product-counter">1/1</div>
+                            <div class="product-image">
+                                <img src="assets/dopamina 2.png" alt="Dopamina Drumkit" class="product-img-real">
+                            </div>
+                            <h3 class="product-name" data-i18n="drumkit-title">DOPAMINA DRUMKIT<br>(ALL SOUNDS)</h3>
+                            <p class="product-soon" data-i18n="soon"
+                                style="font-size: 0.8rem; margin-bottom: 0.5rem; opacity: 0.7; font-family: 'Courier New', monospace;">
+                                soon...</p>
+                            <p class="product-price">$10.00</p>
+                            <button class="add-to-cart-btn" data-i18n="buy-now"
+                                onclick="window.open('https://beatstars.com/mikejin', '_blank')">BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Shows Section -->
+        <section id="shows" class="section shows-section">
+            <h2 class="section-title" data-i18n="nav-shows">SHOWS</h2>
+            <div class="coming-soon" data-i18n="soon">soon...</div>
+
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2026 mikejin</p>
+            <div class="footer-links">
+                <a href="terms.html" data-i18n="footer-terms">Terms and Conditions</a>
+                <span>|</span>
+                <a href="privacy.html" data-i18n="footer-privacy">Privacy Policy</a>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Sign Up Modal -->
+    <div id="signup-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h2 data-i18n="nav-signup">SIGN UP</h2>
+            <p data-i18n="modal-desc">Get notified about new releases, tour dates, and exclusive content</p>
+            <form class="signup-form">
+                <input type="email" name="email" data-placeholder="email-ph" placeholder="Email Address *" required>
+                <p id="email-error"
+                    style="color: #ff4444; display: none; margin-top: -5px; margin-bottom: 10px; font-size: 0.85rem; text-align: left;">
+                </p>
+                <input type="text" name="firstName" data-placeholder="fname-ph" placeholder="First Name">
+                <input type="text" name="lastName" data-placeholder="lname-ph" placeholder="Last Name">
+                <input type="tel" name="phone" data-placeholder="phone-ph" placeholder="Phone Number">
+                <input type="text" name="country" data-placeholder="country-ph" placeholder="Country">
+                <button type="submit" class="subscribe-btn" data-i18n="subscribe">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html><!-- Feedback Modal -->
+<div id="feedback-modal" class="modal">
+    <div class="modal-content feedback-content" style="text-align: center;">
+        <h2 id="feedback-title" style="margin-bottom: 20px;"></h2>
+        <p id="feedback-message" style="margin-bottom: 30px; font-size: 1.2rem;"></p>
+        <button id="feedback-ok-btn" class="subscribe-btn" style="width: auto; padding: 10px 40px;">OK!</button>
+    </div>
+</div>
